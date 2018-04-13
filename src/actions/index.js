@@ -1,7 +1,7 @@
 //list actions
 //submit guess
 //restart
-//click info
+//click i
 
 export const SUBMIT_GUESS = 'SUBMIT_GUESS';
 export const submitGuess =(guess)=> {
@@ -12,15 +12,16 @@ export const submitGuess =(guess)=> {
     }
 }
 export const RESTART = 'RESTART';
-export const restart = ()=> {
+export const restart = (guess)=> {
     return {
-        type: RESTART
-        //click
+        type: RESTART,
+        guess
     }
 }
-export const GET_INFO = 'GET_INFO';
-export const getInfo = () =>{
+export const AURAL_UPDATE = 'AURAL_UPDATE';
+export const auralUpdate = () =>{
     return {
-        type: GET_INFO
+        type: AURAL_UPDATE,
+        
     }
 }
